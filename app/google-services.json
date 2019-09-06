@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "507386562921",
+    "firebase_url": "https://ordermster.firebaseio.com",
+    "project_id": "ordermster",
+    "storage_bucket": "ordermster.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507386562921:android:5704e0af882bf7ab",
+        "android_client_info": {
+          "package_name": "com.example.ordermaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507386562921-ptilfud2q6mopje8caooc56o3d2tucnl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ordermaster",
+            "certificate_hash": "7e0ae85ff2e5b44f55ebe8020608fd47b033f67a"
+          }
+        },
+        {
+          "client_id": "507386562921-hiho6u7fgtes05fdctb7sokhvpeo013s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSWalbd50e7qMsUvJoTwl83-alKBjU61s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507386562921-hiho6u7fgtes05fdctb7sokhvpeo013s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
