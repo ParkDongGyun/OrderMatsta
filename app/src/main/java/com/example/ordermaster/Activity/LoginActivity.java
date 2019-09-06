@@ -93,7 +93,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-        Log.i("String","dd");
+
     }
 
     private void FirebaseAuthWithGoogle(GoogleSignInAccount googleSignInAccount) {
