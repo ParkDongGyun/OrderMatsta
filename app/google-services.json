@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "507386562921-ptilfud2q6mopje8caooc56o3d2tucnl.apps.googleusercontent.com",
+          "client_id": "507386562921-2trbm6t69pke47pvo6pgosdg9oglauje.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.ordermaster",
-            "certificate_hash": "7e0ae85ff2e5b44f55ebe8020608fd47b033f67a"
+            "certificate_hash": "da383255b9b20e0dfd0fd735d3c9e3ed2f0235ff"
           }
         },
         {

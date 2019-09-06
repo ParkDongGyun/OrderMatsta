@@ -35,7 +35,7 @@ import java.security.NoSuchAlgorithmException;
 public class LoginActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
     SignInButton google_login;
-    private static final int RC_SIGN_IN = 100;
+    private static final int RC_SIGN_IN = 1000;
     private FirebaseAuth firebaseAuth;
     private GoogleApiClient googleApiClient;
 
@@ -45,19 +45,19 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_GAMES_SIGN_IN)
+        GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken("AIzaSyBRLplIRdENd2hkcpcErC_82pO71HN0Wrc")
                 .requestEmail()
                 .build();
 
-        Log.i(getString(R.string.logintag),"googleSignInOptions");
+        Log.i(getString(R.string.logintag),"googleSignInOptions : " + googleSignInOptions.toString());
 
         googleApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this, (GoogleApiClient.OnConnectionFailedListener)this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API,googleSignInOptions)
                 .build();
 
-        Log.i(getString(R.string.logintag),"googleApiClient");
+        Log.i(getString(R.string.logintag),"googleApiClient : "+googleApiClient.toString());
 
         firebaseAuth = FirebaseAuth.getInstance();
         google_login = findViewById(R.id.Google_Login);
@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(googleApiClient);
                 startActivityForResult(signInIntent, RC_SIGN_IN);
 
-                Log.i(getString(R.string.logintag),"firebaseAuth");
+                Log.i(getString(R.string.logintag),"firebaseAuth : " + firebaseAuth.toString());
             }
         });
     }

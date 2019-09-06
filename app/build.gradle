@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\DongGyun\\Desktop\\OrderMatsta\\master.jks')
+            storePassword 'mc10041004'
+            keyAlias = 'master'
+            keyPassword 'mc10041004'
+        }
+    }
     compileSdkVersion 29
     buildToolsVersion "29.0.1"
     defaultConfig {
@@ -36,6 +44,8 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-auth:4.2.1'
     implementation 'com.google.firebase:firebase-database:17.0.0'
     implementation 'com.google.firebase:firebase-auth:17.0.0'
+    implementation 'com.google.gms:google-services:4.0.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
 
     // 카카오 로그인 sdk를 사용하기 위해 필요.
     api group: 'com.kakao.sdk', name: 'usermgmt', version: '1.14.0'
